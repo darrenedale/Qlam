@@ -5,6 +5,8 @@
 #ifndef QLAM_TIMEDACTIONDIALOGUE_H
 #define QLAM_TIMEDACTIONDIALOGUE_H
 
+#include <optional>
+
 #include <QtWidgets/QDialog>
 #include <QtCore/QTimer>
 

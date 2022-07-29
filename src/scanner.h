@@ -1,6 +1,8 @@
 #ifndef QLAM_CLAMSCAN_H
 #define QLAM_CLAMSCAN_H
 
+#include <optional>
+
 #include <QtCore/QThread>
 #include <QtCore/QString>
 #include <QtCore/QStringList>
