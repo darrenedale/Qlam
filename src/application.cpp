@@ -120,7 +120,7 @@ qDebug() << "engine lock requested, stopping dispose timer";
 			path = QDir::toNativeSeparators(settings()->databasePath()).toLocal8Bit();
 		}
 
-		int ret = cl_load(path.data(), m_scanEngine, &sigs, CL_DB_STDOPT); // NOLINT(hicpp-signed-bitwise)
+		cl_error_t ret = cl_load(path.data(), m_scanEngine, &sigs, CL_DB_STDOPT); // NOLINT(hicpp-signed-bitwise)
 
 		if(CL_SUCCESS != ret) {
 			qDebug() << "failed to load databases:" << cl_strerror(ret);
